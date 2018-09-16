@@ -1,0 +1,28 @@
+// Our variables
+const key = "e6ef2cde327f46e3820d0344025b79fc"
+const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${key}`
+Dollattecket= att jag injeserar nyckeln i ${key}
+
+
+// Our main function
+const recievedNews = (newsdata) => { //deklarerar en funktion, tar ett argument som heter newsdata ( ska hämta saker ifrån den)
+		
+	// For each article object from the API, we create a new div in HTML. 
+    newsdata.articles.forEach((article) => {  //articles=array i vår artikel, article är en array som innehåller objekt. For each = för varje, sen loopar vi igenom alla artiklar i arrayen
+    när vi gjort det, vill vi visa aritklar
+            
+					//Here we create and add html elements to our html file
+					document.querySelector(".allNews").innerHTML += (lägger till, för varje varv vi går i loopen lägger vi till, får nya rader) //.allNews=tomma url i html .innerhtml = här vill vi skapa vår html-element
+            `<div class="news"> skapar en div med klassen news
+            <h2>${article.title}</h2> lägger in en h2 article title kommer från postman article
+            <img src="${article.urlToImage}"/> tar fram bilnden
+            <p>"${article.description}"</p> dollartecknet = injecerar js i hrml filen 
+            </div>` 
+    })
+}
+
+//Fetch is a built in function in Javascript, it gets the data from the API and tranforms it into Javascript objects – JSON data. 
+fetch(url) //Hämta vår datafil fech=inbyggd funktion i JS
+  .then(response => response.json()) //får tillbaka vårt svar i JSON
+  .then(recievedNews)
+

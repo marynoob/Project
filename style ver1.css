@@ -1,0 +1,86 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #76917B;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*linkbutton in article*/
+.linkButton {
+    background-color: #76917B; /* Green */
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:0 auto;
+}
+
+/*news görs i JS*/
+.news {
+    background-color: #EAF6EC;
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+    display: grid;
+    grid-column-gap: 50px;
+    padding: 20px; /*space mellan innehåll och kanten på boxen*/
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+/*.allNews{
+    background: orange;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news{
+    background: blue;
+    width: 800px;
+    height: 500px;
+    margin:; 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}*/
+
+/* img in articles */
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+/* headline in articles */
+h2{
+	text-align: center;
+}
+
+
